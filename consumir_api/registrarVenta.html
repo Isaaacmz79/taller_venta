@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- Compiled and minified CSS -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.min.css">
+     <title>Registrar Usuario</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <form class="col s12">
+
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="codigo_venta" type="text" class="validate" placeholder="Código de venta">
+                  <label for="codigo_venta">Código de venta</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">account_circle</i>
+                  <input id="codigo_pedido" type="text" class="validate" placeholder="Código pedido">
+                  <label for="codigo_pedido">Código de pedido</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">person_pin</i>
+                  <input id="nombre" type="text" class="validate" placeholder="Nombre">
+                  <label for="nombre">Nombre cliente</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">confirmation_number</i>
+                  <input id="nro_identificacion" type="text" class="validate" placeholder="Número de identificación">
+                  <label for="nro_identificacion">Número de identificacion</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s6">
+                  <select class="browser-default" id="tipo_cliente">
+                    <option value="" disabled selected>Elija el tipo de cliente</option>
+                    <option value="Persona natural">Persona natural</option>
+                    <option value="Persona juridica">Persona juridica</option>
+                    <option value="Empresa">Empresa</option>
+                  </select>
+                </div>
+              </div>
+              
+
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">home</i>
+                  <input id="direccion" type="text" class="validate" placeholder="Dirección">
+                  <label for="direccion">Dirección</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s6">
+                  <i class="material-icons prefix">perm_contact_calendar</i>
+                  <input id="fecha_entrega" type="text" class="validate" placeholder="Fecha entrega">
+                  <label for="fecha_entrega">Fecha entrega</label>
+                </div>
+              </div>
+
+              <div class="row">
+                <div class="input-field col s6">
+                <select class="browser-default" id="metodo_pago">
+                  <option value="" disabled selected placeholder="Elija el método de pago">Elija el método de pago</option>
+                  <option value="Efectivo">Efectivo</option>
+                </select>
+              </div>
+            </div>
+
+              <div class="row">
+                <div class="input-field col s6">
+                        <!-- Dentro del archivo editar.html -->
+                        <button type="button" class="btn waves-effect waves-light" id="btnRegistrar">Registrar</button>
+                        <a button type="button"  class="btn waves-effect waves-light"  href="listarDatos.html">ver los registros  </button></a>
+         
+                </div>
+              </div>
+            </form>
+          </div>
+        
+          <!-- Compiled and minified JavaScript -->
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>   
+          <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.11/dist/sweetalert2.all.min.js"></script>   
+        
+          <script src="jsVenta/funciones.js"></script>
+          <div id="error"></div>
+        </body>
+        </html>
